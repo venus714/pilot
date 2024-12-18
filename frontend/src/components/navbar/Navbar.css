@@ -1,0 +1,81 @@
+nav {
+    background: #141e30;
+    height: 80px;
+    display: flex;
+    justify-content: space-between; /* Changed to space-between to align logo and links */
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    padding: 0 20px; /* Added padding for better spacing */
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 10px;
+    padding: 0.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: rgb(240, 63, 10);
+  }
+  
+  #login {
+    margin-left: 50px;
+  }
+  
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 0;
+  }
+  
+  .fade-exit-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  
+  .logo-container {
+    height: 50px;
+  }
+  
+  .logo-container img {
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  .navbar img {
+    height: 74px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    object-fit: contain;
+  }
+  
+  .logo {
+    padding: 15px !important;
+  }
+  
