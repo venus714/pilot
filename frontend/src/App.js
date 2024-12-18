@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 
 import Navbar from './components/navbar/Navbar';
-import Home from './Home';
+//import Home from './Home';
 import LoginForm from './components/Login/Login';
-import SignupForm from './components/signup/Signup';
+import Signup from './components/signup/Signup';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -58,10 +58,10 @@ function App() {
       <div className="App">
         <Navbar setIsAuthenticated={setIsAuthenticated} isAuthenticated={isAuthenticated} admin={admin} />
         <Routes>
-          <Route path="/" element={<Home isAuthenticated={isAuthenticated} admin={admin} />} />
+          <Route path="/" element={<Signup isAuthenticated={isAuthenticated} admin={admin} />} />
           {/* <Route path="/faq" element={<FaqPage />} /> */}
           <Route path="/login" element={<LoginForm error={error} setValues={setValues} values={values} handleLogin={handleLogin} />} />
-          <Route path="/signup" element={<SignupForm />} />
+          <Route path="/signup" element={<Signup/>} />
           {/* {isAuthenticated && (
             <>
               <Route path="/orders" element={<OrderForm userId={userId} admin={admin} />} />

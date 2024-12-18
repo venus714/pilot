@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { CSSTransition } from 'react-transition-group';
 import { useNavigate } from "react-router-dom";
+import "../navbar/Navbar.css"
 
 
 function Navbar() {
